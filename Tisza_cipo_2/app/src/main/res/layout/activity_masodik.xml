@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".masodik"
+
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:padding="40dp">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SZEMÉLYES ADATOK"
+        android:padding="16dp"
+        android:textSize="24dp"/>
+
+    <EditText
+        android:id="@+id/nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Név"
+        android:inputType="text"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/varos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Város"
+        android:inputType="text"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cím"
+        android:inputType="text"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/telefonszam"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Telefonszám"
+        android:inputType="number"
+        android:padding="16dp"
+        />
+
+    <EditText
+        android:id="@+id/email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="E-mail"
+        android:inputType="text"
+        />
+
+    <TextView
+        android:id="@+id/adatok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cipő adatok"
+        android:padding="32dp"/>
+
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="FIZETES"/>
+
+
+
+
+
+</LinearLayout>

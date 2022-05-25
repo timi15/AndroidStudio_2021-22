@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:padding="24dp">
+
+    <TextView
+        android:id="@+id/textview_hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hello World!"
+        />
+
+    <TextView
+        android:id="@+id/textview_szia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_hello"
+        android:text="szia!"
+        />
+
+
+    <ImageView
+        android:id="@+id/imgeview_cipo"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/cipo"
+        />
+
+    <Button
+        android:id="@+id/button_vasarlas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vásárlás"
+        android:layout_below="@id/imgeview_cipo"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Megjegyzés"
+        android:layout_below="@+id/imgeview_cipo"
+        android:layout_toRightOf="@id/button_vasarlas"
+        android:layout_alignParentRight="true"
+        />
+
+</RelativeLayout>

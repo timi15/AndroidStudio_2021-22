@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".adatok">
+
+
+    <ImageView
+        android:id="@+id/kep"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:layout_marginRight="16dp"
+
+        />
+
+    <TextView
+        android:id="@+id/adatok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ADATOK ELKÜLDVA"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/kep"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/kep"
+        android:padding="16dp"
+
+
+        />
+
+    <TextView
+        android:id="@+id/textviewnev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/adatok"
+        app:layout_constraintStart_toStartOf="@+id/adatok"
+        android:text="Név"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textviewtel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textviewnev"
+        app:layout_constraintStart_toStartOf="@+id/textviewnev"
+        android:text="Telefonszám"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textviewsuly"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textviewtel"
+        app:layout_constraintStart_toStartOf="@+id/textviewtel"
+        android:text="Súly"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/nem"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/textviewsuly"
+        app:layout_constraintStart_toStartOf="@+id/textviewsuly"
+        android:text="Nem"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textviewmagassag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@+id/nem"
+        app:layout_constraintStart_toStartOf="@+id/nem"
+        android:text="Magasság"
+        android:padding="16dp"/>
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

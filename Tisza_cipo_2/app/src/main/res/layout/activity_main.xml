@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/cipo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tisza cipő"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="40dp"
+        android:textSize="40dp"
+        android:padding="16dp"
+        />
+
+    <ImageView
+        android:id="@+id/kep1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cipo"
+        android:layout_marginLeft="80dp"/>
+    <ImageView
+        android:id="@+id/kep2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cipo"
+        android:layout_marginRight="80dp"
+        />
+
+    <RadioGroup
+        android:padding="16dp"
+        android:id="@+id/radio1"
+        app:layout_constraintTop_toBottomOf="@+id/kep2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="56dp">
+
+        <RadioButton
+            android:id="@+id/szam41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41"
+            />
+        <RadioButton
+            android:id="@+id/szam42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="42"
+            />
+
+        <RadioButton
+            android:id="@+id/szam43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43"
+            />
+        <RadioButton
+            android:id="@+id/szam44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="44"
+            />
+        <RadioButton
+            android:id="@+id/szam45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="45"
+            />
+
+
+    </RadioGroup>
+
+    <RadioGroup
+        android:padding="16dp"
+        android:id="@+id/radio2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="@+id/radio1"
+        app:layout_constraintTop_toBottomOf="@+id/radio1">
+
+        <RadioButton
+            android:id="@+id/feher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fehérr"
+            />
+
+        <RadioButton
+            android:id="@+id/fekete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Fekete"
+            />
+
+        <RadioButton
+            android:id="@+id/piros"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Piros"
+            />
+
+
+
+
+    </RadioGroup>
+
+
+    <Button
+        android:id="@+id/gomb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@+id/cipo"
+        app:layout_constraintTop_toBottomOf="@+id/radio2"
+        android:text="Megrendel"/>
+
+
+
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="24dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Akarsz e írni JavaScriptből? "
+        />
+
+    <EditText
+        android:id="@+id/edittext_vnev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Vezetéknév"
+        android:inputType="text"/>
+
+    <EditText
+        android:id="@+id/edittext_knev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Keresztnév"
+        android:inputType="text"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/radiobutton_igen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Igen"/>
+
+        <RadioButton
+            android:id="@+id/radiobutton_nem"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nem"/>
+
+    </RadioGroup>
+
+    <EditText
+        android:id="@+id/textview_valasz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Válasz"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="48dp"
+        android:text="Szavazok"/>
+
+
+
+</LinearLayout>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".harmadik"
+    android:orientation="vertical"
+    android:gravity="center_horizontal">
+
+    <TextView
+        android:padding="40dp"
+        android:textSize="24dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sikeres megrendelés!"
+        />
+
+    <TextView
+        android:id="@+id/megrendelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Megrendelő adatai:"
+        android:padding="16dp"
+        />
+
+    <TextView
+        android:id="@+id/textviewnev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Név"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textviewvaros"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Város"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textviewcim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cím"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textviewtelefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Telefon"
+        android:padding="16dp"/>
+
+    <TextView
+        android:id="@+id/textviewemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail"
+        android:padding="16dp"/>
+
+
+
+
+
+    <TextView
+        android:id="@+id/cipoadat"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Választott cipő adatai"
+        android:padding="16dp"
+        />
+
+</LinearLayout>

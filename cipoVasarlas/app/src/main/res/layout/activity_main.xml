@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    android:layout_marginLeft="35dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview_nike"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nike"
+        android:layout_marginTop="30dp"
+        android:textSize="50dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_air"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Air Jorden"
+        android:layout_below="@id/textview_nike"
+        android:textSize="30dp"
+        />
+
+    <TextView
+        android:id="@+id/textview_szürke"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textview_air"
+        android:text="szürke"
+        android:textSize="25dp"/>
+
+    <RadioGroup
+        android:id="@+id/radios"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_below="@id/textview_szürke"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="41" />
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="42"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="43"/>
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="44"/>
+
+
+
+    </RadioGroup>
+    <ImageView
+        android:id="@+id/imageview_jorden"
+
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+
+        android:layout_below="@id/radios"
+        android:src="@drawable/nike"
+        />
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/ar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Ár"
+        android:inputType="number"
+        android:layout_below="@id/imageview_jorden"/>
+    <EditText
+        android:id="@+id/nev"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Név"
+        android:inputType="text"
+        android:layout_below="@+id/ar"/>
+
+    <EditText
+        android:id="@+id/cim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Cím"
+        android:inputType="text"
+        android:layout_below="@+id/nev"/>
+
+    <EditText
+        android:id="@+id/telefon"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Telefonszám"
+        android:inputType="number"
+        android:layout_below="@+id/cim"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Megrendelés"
+        android:layout_below="@+id/telefon"/>
+
+</RelativeLayout>
